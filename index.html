@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <title>TRAVEL_JEJU</title>
+    <style>
+        body {
+            background-image: url(./image/bg.jpg);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        .august {
+            max-width: 640px;
+            max-height: 640px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #wrapper {
+            -webkit-backdrop-filter: blur(8px) brightness(70%);
+            backdrop-filter: blur(8px) brightness(70%);
+
+            height: 100vh;
+            width: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        :root {
+            --swiper-theme-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="wrapper">
+        <div class="swiper august">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./image/jeju/jeju.jpg" alt="카드 뉴스 1"></div>
+                <div class="swiper-slide"><img src="./image/jeju/jeju1.jpg" alt="카드 뉴스 1"></div>
+                <div class="swiper-slide"><img src="./image/jeju/jeju2.jpg" alt="카드 뉴스 1"></div>
+                <div class="swiper-slide"><img src="./image/jeju/jeju3.jpg" alt="카드 뉴스 1"></div>
+                <div class="swiper-slide"><img src="./image/jeju/jeju4.jpg" alt="카드 뉴스 1"></div>
+                <div class="swiper-slide"><img src="./image/jeju/jeju5.jpg" alt="카드 뉴스 1"></div>
+                <div class="swiper-slide"><img src="./image/jeju/jeju6.jpg" alt="카드 뉴스 1"></div>
+                <div class="swiper-slide"><img src="./image/jeju/jeju7.jpg" alt="카드 뉴스 1"></div>
+                <div class="swiper-slide"><img src="./image/jeju/jeju8.jpg" alt="카드 뉴스 1"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".august", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
